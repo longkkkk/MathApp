@@ -20,22 +20,6 @@ public class CalculatorTest {
     
     public CalculatorTest() {
     }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
 
     /**
      * Test of sum method, of class Calculator.
@@ -96,6 +80,19 @@ public class CalculatorTest {
         Calculator instance = new Calculator();
         int expResult = -21;
         int result = instance.mul(a, b);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+       // fail("The test case is a prototype.");
+    }
+    
+    @Test
+    public void testGCD() {
+        System.out.println("GCD");
+        int a = 9;
+        int b = 12;
+        Calculator instance = new Calculator();
+        int expResult = 3;
+        int result = instance.gcd(a, b);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
        // fail("The test case is a prototype.");
