@@ -16,7 +16,7 @@ public class MathApp {
      */
     public static void main(String[] args) {
         System.out.println("I love U xyz!");
-        System.out.println("Sorry! I dont love you");
+        System.out.println("Sorry! But I love you BHYN\n Written by LHS");
     }
     
 }
